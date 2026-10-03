@@ -1,0 +1,52 @@
+# Frontend Team — Backend Quick Start
+
+## 1. Start Backend with Docker
+
+Make sure Docker Desktop, PostgreSQL, MongoDB and Redis are running.
+
+Open PowerShell in the `backend` folder:
+
+```powershell
+docker build -t social-media-scheduler-backend .
+```
+
+Then start the backend:
+
+```powershell
+docker run --rm -p 8000:8000 `
+  --env-file .env `
+  -e POSTGRES_HOST=host.docker.internal `
+  -e MONGODB_URI=mongodb://host.docker.internal:27017 `
+  -e REDIS_URL=redis://host.docker.internal:6379/0 `
+  social-media-scheduler-backend
+```
+
+> If the Docker image has already been built and no Dockerfile/requirements/code change requires a rebuild, the `docker build` command can be skipped.
+
+## 2. Check Backend
+
+Backend Base URL:
+
+```text
+http://localhost:8000
+```
+
+Test:
+
+```powershell
+curl.exe -i http://localhost:8000/
+```
+
+Swagger:
+
+```text
+http://localhost:8000/docs
+```
+
+## 3. Use Backend in Frontend
+
+Set the API base URL:
+
+```javascript
+const API_BASE_URL = "http://localhost:8000";
+```

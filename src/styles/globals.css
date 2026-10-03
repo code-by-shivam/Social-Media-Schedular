@@ -1,0 +1,165 @@
+/* Global Reset & Human Typography Design System */
+
+:root[data-theme="dark"] .action-btn,
+:root[data-theme="dark"] .card-btn.muted,
+:root[data-theme="dark"] .sp-setting-btn-outline,
+:root[data-theme="dark"] .sp-setting-btn,
+:root[data-theme="dark"] .theme-option,
+:root[data-theme="dark"] .document-upload-label,
+:root[data-theme="dark"] .inline-format-btn,
+:root[data-theme="dark"] .plat-toggle-btn,
+:root[data-theme="dark"] .queue-card .card-btn,
+:root[data-theme="dark"] .calendar-nav .nav-btn,
+:root[data-theme="dark"] button:not(.sidebar-link):not(.logout-trigger) {
+  color: var(--button-dark-text);
+}
+
+:root[data-theme="dark"] .action-btn,
+:root[data-theme="dark"] .card-btn.muted,
+:root[data-theme="dark"] .sp-setting-btn-outline,
+:root[data-theme="dark"] .sp-setting-btn,
+:root[data-theme="dark"] .document-upload-label,
+:root[data-theme="dark"] .inline-format-btn,
+:root[data-theme="dark"] .plat-toggle-btn,
+:root[data-theme="dark"] .queue-card .card-btn,
+:root[data-theme="dark"] .calendar-nav .nav-btn,
+:root[data-theme="dark"] button:not(.sidebar-link):not(.logout-trigger) {
+  background: var(--button-dark);
+  border-color: var(--button-dark);
+}
+
+:root[data-theme="dark"] .action-btn:hover,
+:root[data-theme="dark"] .card-btn:hover,
+:root[data-theme="dark"] .sp-setting-btn-outline:hover,
+:root[data-theme="dark"] .document-upload-label:hover,
+:root[data-theme="dark"] .inline-format-btn:hover,
+:root[data-theme="dark"] .plat-toggle-btn:hover,
+:root[data-theme="dark"] .queue-card .card-btn:hover,
+:root[data-theme="dark"] .calendar-nav .nav-btn:hover,
+:root[data-theme="dark"] button:not(.sidebar-link):not(.logout-trigger):hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--button-dark-text);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+  transition: background 0.25s ease, color 0.25s ease;
+  selection-background-color: var(--text);
+  selection-color: var(--background);
+}
+
+::selection {
+  background: var(--text);
+  color: var(--background);
+}
+
+/* Headings with Editorial Human Styling */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+button, input, textarea, select {
+  background: transparent;
+  color: var(--text);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-taupe-40);
+  border-radius: 6px;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Form inputs & controls without box wrappers */
+input, select, textarea, button {
+  font-family: inherit;
+  color: inherit;
+  background: transparent;
+  outline: none;
+}
+
+/* Minimal hairline dividers instead of box cards */
+.hairline-b {
+  border-bottom: 1px solid var(--c-taupe-20);
+}
+
+.hairline-t {
+  border-top: 1px solid var(--c-taupe-20);
+}
+
+.hairline-l {
+  border-left: 1px solid var(--c-taupe-20);
+}
+
+.hairline-r {
+  border-right: 1px solid var(--c-taupe-20);
+}
+
+.hairline-dark-b {
+  border-bottom: 1px solid var(--c-cream-20);
+}
+
+/* Base Link */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-taupe-40);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-taupe);
+}

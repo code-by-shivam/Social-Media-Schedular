@@ -1,0 +1,82 @@
+.sp-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  user-select: none;
+}
+
+.sp-monogram-mark {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.sp-logo-container:hover .sp-monogram-mark {
+  transform: rotate(5deg) scale(1.04);
+}
+
+.sp-svg-logo {
+  width: 100%;
+  height: 100%;
+}
+
+/* Variant Light (For dark backgrounds) */
+.sp-logo-container.light {
+  color: #f7f0e5;
+}
+.sp-logo-container.light .sp-brand-name {
+  color: #ffffff;
+}
+.sp-logo-container.light .sp-brand-tag {
+  color: #f7f0e5;
+  opacity: 0.82;
+}
+
+/* Variant Dark (For light backgrounds) */
+.sp-logo-container.dark {
+  color: #27251f;
+}
+.sp-logo-container.dark .sp-brand-name {
+  color: #27251f;
+}
+.sp-logo-container.dark .sp-brand-tag {
+  color: #58554e;
+}
+
+/* Text styling */
+.sp-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-brand-name {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+}
+
+.sp-brand-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  margin-top: 3px;
+}
+
+/* Sizes */
+.sp-logo-container.large .sp-monogram-mark {
+  width: 56px;
+  height: 56px;
+}
+.sp-logo-container.large .sp-brand-name {
+  font-size: 20px;
+}
+.sp-logo-container.large .sp-brand-tag {
+  font-size: 11px;
+}

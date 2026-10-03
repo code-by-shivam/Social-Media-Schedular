@@ -1,0 +1,14 @@
+.sp-app-wrapper {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.sp-main-content {
+  margin-left: var(--sidebar-width);
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 40px;
+  background-color: var(--background);
+  box-sizing: border-box;
+  color: var(--text);
+}

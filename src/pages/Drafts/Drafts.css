@@ -1,0 +1,199 @@
+.drafts-container {
+  padding: 0 32px 32px;
+  color: #171717;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+.drafts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-top: 0;
+}
+
+.drafts-header h2 {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #171717;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.new-draft-btn {
+  background: #171717;
+  color: #f7f0e5;
+  border: 1px solid #171717;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(23, 23, 23, 0.12);
+}
+
+.new-draft-btn:hover {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+.drafts-table-wrapper {
+  background: transparent;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.drafts-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.drafts-table th {
+  padding: 16px 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #171717;
+  border-bottom: 1px solid #262626;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.drafts-table td {
+  padding: 18px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #1f1f1f;
+  color: #171717;
+}
+
+.draft-title {
+  font-weight: 500;
+  color: #171717;
+}
+
+.platform-tag {
+  background: #f3f3f3;
+  border: 1px solid #d7d3cd;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #171717;
+}
+
+.sub-text {
+  color: #4b4b4b;
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.action-btn {
+  background: transparent;
+  border: 1px solid #b8b2ab;
+  color: #171717;
+  padding: 7px 12px;
+  border-radius: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #171717;
+  color: #f7f0e5;
+  border-color: #171717;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(23, 23, 23, 0.08);
+}
+
+.edit-btn {
+  background: rgba(23, 23, 23, 0.04);
+}
+
+.edit-btn:hover {
+  background: #171717;
+  color: #f7f0e5;
+}
+
+.delete-btn {
+  border-color: #b9b0a8;
+  color: #262626;
+}
+
+.delete-btn:hover {
+  background: #171717;
+  color: #f7f0e5;
+  border-color: #171717;
+}
+
+:root[data-theme="dark"] .drafts-container {
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .drafts-header h2,
+:root[data-theme="dark"] .drafts-table th,
+:root[data-theme="dark"] .drafts-table td,
+:root[data-theme="dark"] .draft-title,
+:root[data-theme="dark"] .platform-tag,
+:root[data-theme="dark"] .sub-text,
+:root[data-theme="dark"] .action-btn,
+:root[data-theme="dark"] .delete-btn {
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .drafts-table-wrapper {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] .drafts-table th,
+:root[data-theme="dark"] .drafts-table td {
+  border-bottom-color: var(--border);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .platform-tag {
+  background: var(--surface-soft);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .sub-text {
+  color: var(--text-muted);
+}
+
+:root[data-theme="dark"] .action-btn {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .action-btn:hover,
+:root[data-theme="dark"] .edit-btn:hover,
+:root[data-theme="dark"] .delete-btn:hover {
+  background: var(--button-dark);
+  border-color: var(--button-dark);
+  color: var(--button-dark-text);
+} 
+
+:root[data-theme="dark"] .edit-btn {
+  background: var(--surface-soft);
+}
+
+:root[data-theme="dark"] .new-draft-btn {
+  background: var(--button-dark);
+  border-color: var(--button-dark);
+  color: var(--button-dark-text);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.26);
+}
+
+:root[data-theme="dark"] .new-draft-btn:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--text-light);
+} 
